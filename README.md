@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Projeto da minha cliente Yngrid com o objetivo de agendar clientes e controlar a sua entrada de dinheiro, saída e lucro.
 
 ## Getting Started
 
