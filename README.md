@@ -2,7 +2,8 @@ Projeto da minha cliente Yngrid com o objetivo de agendar clientes e controlar a
 
 ## Getting Started
 
-First, run the development server:
+
+## 🛠️ Como rodar o projeto:
 
 ```bash
 npm run dev
@@ -14,23 +15,22 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) com o seu navegador para ver o resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Tecnologias Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Next.js**: Framework React para o desenvolvimento do front-end e rotas.
+* **TypeScript**: Adição de tipagem estática para maior segurança no código.
+* **Firebase**: Utilizado como Realtime Database para armazenamento dos agendamentos em tempo real.
+* **CSS Modules**: Estilização modularizada para evitar conflitos de escopo.
 
-## Learn More
+## 📋 Funcionalidades (Em desenvolvimento)
 
-To learn more about Next.js, take a look at the following resources:
+* [x] Estrutura base com Next.js (Pages Router).
+* [x] Formulário de captura de dados (Nome, Horário, Tipo de Depilação e Observações).
+* [ ] Integração completa com Firebase Realtime Database.
+* [ ] Listagem de agendamentos em tempo real.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/seu-usuario/yngrid-melo-depiladora.git](https://github.com/seu-usuario/yngrid-melo-depiladora.git)
