@@ -72,6 +72,10 @@
         max-height: 200px;
         box-sizing: content-box;
 
+        & + .caixaindividual{
+            margin-top: 1rem;
+        }
+
         
     .nometitulo{
         font-size: 1.5rem;

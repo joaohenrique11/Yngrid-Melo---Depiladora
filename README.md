@@ -1,4 +1,4 @@
-Projeto da minha cliente Yngrid com o objetivo de agendar clientes e controlar a sua entrada de dinheiro, saída e lucro.
+Projeto de site com o objetivo de ajudar minha cliente a gerenciar entrada, saída e lucro do seu dinheiro. E gerenciar clientes (Nome, tipo de depilação e horario)gir
 
 ## Getting Started
 
