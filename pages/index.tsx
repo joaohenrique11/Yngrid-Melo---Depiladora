@@ -3,7 +3,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import { database } from "../services/firebase";
 import { FormEvent, useEffect, useState } from "react";
-import { ref } from "firebase/database";
+import { ref, set } from "firebase/database";
 
 type Cliente = {
     chave: string;
