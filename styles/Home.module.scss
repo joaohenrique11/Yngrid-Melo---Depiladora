@@ -1,117 +1,130 @@
-
-.container{
+.container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     height: 100vh;
-    background-color: #FAF7F2;
+    background-color: #F5F1E9; 
 
-    form{ 
+    form { 
         width: 500px;
         margin-right: 1rem;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        // Mantendo o formulário no alto da tela
+        margin-top: -8rem; 
 
-        input, textarea{
+        .logoContainer {
+            display: flex;
+            justify-content: center;
             width: 100%;
-            padding: 1rem;
-            margin: 0.5rem 0;
-            border: 1px solid rgba(141, 118, 106, 0.3);
-            border-radius: 0.3rem;
-            color: #5D4037;
-            background-color: #FFFFFF;
-
-        &::placeholder {
-            color: #8D766A; 
+            // --- AJUSTE MÁXIMO DE SUBIDA ---
+            margin-bottom: -4rem; // Puxa os inputs muito mais para cima
+            
+            img {
+                width: 350px !important; 
+                height: auto !important;
+                object-fit: contain;
+                background-color: transparent !important;
+            }
         }
 
-        }
-        textarea{
-            resize: none;
-        }
-
-        button{
+        input, textarea {
+            width: 100%;
             padding: 0.8rem;
-            width: 40%;
-            background-color: #C5E1A5;
-            color: #5D4037;
+            margin: 0.2rem 0; 
+            border: 1px solid rgba(139, 109, 85, 0.3);
+            border-radius: 0.3rem;
+            color: #8B6D55;
+            background-color: #FFFFFF;
+            position: relative; // Garante que fiquem acima de possíveis camadas da logo
+            z-index: 2;
+
+            &::placeholder {
+                color: #D7A787;
+            }
+        }
+
+        textarea {
+            resize: none;
+            height: 70px;
+        }
+
+        button {
+            margin-top: 0.5rem;
+            padding: 0.8rem;
+            width: 100%; 
+            background-color: #AABAA0;
+            color: #FFFFFF;
+            font-weight: bold;
             border: none;
             border-radius: 0.5rem;
             cursor: pointer;
             transition: filter 0.2s;
 
-            &:hover{
+            &:hover {
                 filter: brightness(0.9);
             }
         }
     }
 
-    .caixaclientes{
+    .caixaclientes {
         width: 500px;
-        padding: 1rem;
-        background-color: #E8F5E9;
-        height: 500px;
+        padding: 1.5rem;
+        background-color: #E6C5AA;
+        height: 550px; 
         text-align: center;
         border-radius: 0.8rem;
         margin-left: 5rem;
         overflow: auto;
-        color: #5D4037;
+        color: #8B6D55;
+        margin-top: 2rem; 
 
-        input{
+        input {
             width: 100%;
             padding: 1rem;
-            margin: 0.5rem 0;
-            border: 1px solid rgba(0, 0, 0, 0.137);
+            margin-bottom: 1rem;
+            border: 1px solid rgba(139, 109, 85, 0.2);
             border-radius: 0.3rem;
         }
     }
 
-    .caixaindividual{
-        background: rgba(229, 240, 182);
+    .caixaindividual {
+        background: #F5F1E9;
+        border: 1px solid rgba(139, 109, 85, 0.1);
         border-radius: 0.5rem;
         text-align: left;
-        max-height: 200px;
-        box-sizing: content-box;
-
-        & + .caixaindividual{
-            margin-top: 1rem;
-        }
-
+        margin-bottom: 1rem;
         
-    .nometitulo{
-        font-size: 1.5rem;
-        text-align: left;
-        padding: 0.1rem 1rem;
-        font-weight: bold;
-        margin: 0.5rem;
-    }
-
-    .boxtitulo{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        div{
-            margin-right: 1rem;
-        }
-                
-        a{
-            color: red;
-            cursor: pointer;
-            margin-left: 0.5rem;
-        
-        &:hover{
+        .nometitulo {
+            font-size: 1.3rem;
             font-weight: bold;
-            }
+            padding: 0.5rem 1rem 0;
+            margin: 0;
+            color: #8B6D55;
+        }
 
+        .boxtitulo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 1rem;
+            a {
+                color: #8B6D55;
+                opacity: 0.6;
+                font-size: 0.8rem;
+                cursor: pointer;
+                text-decoration: none;
+                &:hover { color: #D7A787; }
             }
         }
 
-        .dados{
-            padding: 0.5rem 1.5rem;
-            p{
-                margin: 0;
-
-            }
+        .dados {
+            padding: 0.3rem 1rem 0.8rem;
+            color: #8B6D55;
+            p { margin: 0.1rem 0; font-size: 0.9rem; }
         }
     }
 }
